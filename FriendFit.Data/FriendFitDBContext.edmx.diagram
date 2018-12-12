@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="08e0ecc6b7694927823163d8fa0a6572" Name="Diagram1" ZoomLevel="34">
+        <EntityTypeShape EntityType="FriendFitDBModel.ActualDistanceExercise" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ActualExcerciseSet" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ActualFreeTextExercise" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ActualLevelExercise" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ActualRepsExercise" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ActualTimedExercise" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ActualWeightExercise" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.Country" Width="1.5" PointX="9.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.DeliveryTypeMaster" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.DeviceMaster" Width="1.5" PointX="9.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.DistanceExercise" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.DistanceExerciseSet" Width="1.5" PointX="11.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.DurationMaster" Width="1.5" PointX="11.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.EditPrice" Width="1.5" PointX="11.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ExcerciseSet" Width="1.5" PointX="11.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.Exercise" Width="1.5" PointX="7.5" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ExerciseTypeMaster" Width="1.5" PointX="5.25" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.FreeTextExercise" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.FrequencyMaster" Width="1.5" PointX="13.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.FriendsInvitation" Width="1.5" PointX="13.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.LevelExercise" Width="1.5" PointX="7.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.Link" Width="1.5" PointX="13.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.Logo" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.MailTimeLog" Width="1.5" PointX="0.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.Recurrence" Width="1.5" PointX="15.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.RepsExercise" Width="1.5" PointX="15.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleExercise" Width="1.5" PointX="15.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleGoalExcerciseSet" Width="1.5" PointX="15.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleGoalWeightExercise" Width="1.5" PointX="9.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleWeeklyMaster" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.StatusMaster" Width="1.5" PointX="11.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.SubscriptionTypeMaster" Width="1.5" PointX="17.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.sysdiagram" Width="1.5" PointX="17.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.TextExercise" Width="1.5" PointX="17.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.TimedExercise" Width="1.5" PointX="17.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.UserProfile" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.UserRole" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.UserToken" Width="1.5" PointX="5.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.WeightExercise" Width="1.5" PointX="13.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.WorkOut" Width="1.5" PointX="5.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.WorkOutSchedule" Width="1.5" PointX="17.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FriendFitDBModel.Transaction" Width="1.5" PointX="0.75" PointY="18.75" IsExpanded="true" />
+        <AssociationConnector Association="FriendFitDBModel.FK__Exercise__Exerci__3B40CD36" ManuallyRouted="false" />
+        <AssociationConnector Association="FriendFitDBModel.FK__Exercise__UserId__3C34F16F" ManuallyRouted="false" />
+        <AssociationConnector Association="FriendFitDBModel.FK__Exercise__WorkOu__3A4CA8FD" ManuallyRouted="false" />
+        <AssociationConnector Association="FriendFitDBModel.FK__UserProfi__Creat__1920BF5C" ManuallyRouted="false" />
+        <AssociationConnector Association="FriendFitDBModel.FK__UserProfi__RoleI__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="FriendFitDBModel.FK__UserProfi__Updat__1A14E395" ManuallyRouted="false" />
+        <AssociationConnector Association="FriendFitDBModel.FK__UserToken__UserI__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="FriendFitDBModel.FK__WorkOut__UserId__3E1D39E1" ManuallyRouted="false" />
+        <AssociationConnector Association="FriendFitDBModel.FK__UserToken__RoleI__22AA2996" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleActualDistanceExercise" Width="1.5" PointX="3.375" PointY="18.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleActualExcerciseSet" Width="1.5" PointX="5.375" PointY="18.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleActualFreeTextExercise" Width="1.5" PointX="19.375" PointY="0.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleActualLevelExercise" Width="1.5" PointX="20.375" PointY="3.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleActualRepsExercise" Width="1.5" PointX="20.375" PointY="7.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleActualTimedExercise" Width="1.5" PointX="7.375" PointY="20.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleActualWeightExercise" Width="1.5" PointX="9.375" PointY="20.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleGoalDistanceExercise" Width="1.5" PointX="20.375" PointY="10.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleGoalFreeTextExercise" Width="1.5" PointX="20.375" PointY="14.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleGoalLevelExercise" Width="1.5" PointX="20.375" PointY="17.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleGoalRepsExercise" Width="1.5" PointX="21.375" PointY="0.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleGoalTextExercise" Width="1.5" PointX="11.375" PointY="21.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ScheduleGoalTimedExercise" Width="1.5" PointX="13.375" PointY="21.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.Payment" Width="1.5" PointX="15.375" PointY="22.125" />
+        <EntityTypeShape EntityType="FriendFitDBModel.PurchaseProductsList" Width="1.5" PointX="17.625" PointY="23.625" />
+        <AssociationConnector Association="FriendFitDBModel.FK__PurchaseP__Payme__7093AB15" />
+        <EntityTypeShape EntityType="FriendFitDBModel.tblPrice" Width="1.5" PointX="20.375" PointY="21.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.ImperialMetric" Width="1.5" PointX="0.75" PointY="22.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.UserProductPayment" Width="1.5" PointX="2.75" PointY="22.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.UserInvitation" Width="1.5" PointX="22.75" PointY="3.75" />
+        <EntityTypeShape EntityType="FriendFitDBModel.UserPurchaseProductsList" Width="1.5" PointX="22.375" PointY="7.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

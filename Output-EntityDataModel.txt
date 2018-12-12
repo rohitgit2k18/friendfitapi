@@ -1,0 +1,9 @@
+﻿Generated model file: FriendFitDBModel.edmx.
+Loading metadata from the database took 00:00:01.2531156.
+Generating the model took 00:00:04.0131539.
+Generated model file: FriendFitDBModel.edmx.
+Loading metadata from the database took 00:00:00.6076353.
+Generating the model took 00:00:02.6614508.
+Generated model file: FriendFitDBModel.edmx.
+Loading metadata from the database took 00:00:00.6185779.
+Generating the model took 00:00:02.3139365.

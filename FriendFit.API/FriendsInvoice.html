@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice</title>
+        <style>
+             p,h1,span{margin: 0; padding: 0; font-family: sans-serif;}
+            .container{max-width:1170px; margin: 0 auto;}
+            .part{display: flex;justify-content: center;}
+            .details{display: flex; justify-content: flex-start; flex-flow:column;}
+             tr {border: 1px solid black;}
+            /* styling part for content */
+            .part p{margin: 30px 0;}
+            .details h1{padding: 10px 0;}
+            .details span{padding: 6px 0;}
+            .details p{padding: 6px 0;}
+            .bold{font-weight: bold;}
+            table{width: 100%; font-family: sans-serif;}
+            table, th, td {border: 1px solid black;border-collapse: collapse; padding: 11px 12px;}
+            
+            .table-part{margin-top:24px; }
+            .table-part th{text-align: left;} 
+            tbody tr td:first-child{width: 85%;}
+            tbody tr td:last-child{text-align: right;}
+            .text-uppercase{text-transform: uppercase;}
+
+        </style>
+</head>
+<body>  
+        <section>
+                <div class="container">
+                    <div class="part">
+                         <p>Thanks for your purchase from NotiFit-please find your tax invoice below.</p>
+                    </div>
+                    <div class="details">
+                        <h1>Tax Invoice</h1>
+                        <span class="bold">Inventico</span>
+                        <span>ABN:98 377 036 171</span>
+                        <p><span class="bold">Date:</span>TodayDate</p>
+                        <p><span class="bold">To:</span>CustomerName</p>
+                    </div>
+                    <div class="table-part">
+                        <table style="width: 100%; border:1px solid #000;">
+                           <thead>
+                                <tr>
+                                    <th>Item Description</th>
+                                    <th>Total</th>
+                                </tr>
+                           </thead>
+                           <tbody>                           
+                               FriendNotification
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                        <td class="text-uppercase">includingGST</td>
+                                        <td>$ TotalAmount</td>
+                                    </tr>
+                           </tbody>
+                        </table>
+                    </div>
+                </div>
+        </section>
+</body>
+</html>

@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E4CC599F-FAB7-4226-862A-2E1B88456FDF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FriendFit.Data</RootNamespace>
+    <AssemblyName>FriendFit.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="NReco, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NReco.2.0.3.0\lib\net40\NReco.dll</HintPath>
+    </Reference>
+    <Reference Include="NReco.PdfGenerator, Version=1.1.15.0, Culture=neutral, PublicKeyToken=231663d50a41b451, processorArchitecture=MSIL">
+      <HintPath>..\packages\NReco.PdfGenerator.1.1.15\lib\net20\NReco.PdfGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualDistanceExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActualExcerciseSet.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActualFreeTextExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActualLevelExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActualRepsExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActualTimedExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActualWeightExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApiModel\APIRequestModel\AddExerciseRequestModel.cs" />
+    <Compile Include="ApiModel\APIRequestModel\AddFriendInvitationRequestModel.cs" />
+    <Compile Include="ApiModel\APIRequestModel\AddScheduleExerciseRequestModel.cs" />
+    <Compile Include="ApiModel\APIRequestModel\AddScheduleRequestModel.cs" />
+    <Compile Include="ApiModel\APIRequestModel\AddWorkoutModelRequest.cs" />
+    <Compile Include="ApiModel\APIRequestModel\DeliveryMethodList.cs" />
+    <Compile Include="ApiModel\APIRequestModel\EditExerciseRequestModel.cs" />
+    <Compile Include="ApiModel\APIRequestModel\EditProfileRequestModel.cs" />
+    <Compile Include="ApiModel\APIRequestModel\EmailModelAttachment.cs" />
+    <Compile Include="ApiModel\APIRequestModel\EmailTimeSaveModel.cs" />
+    <Compile Include="ApiModel\APIRequestModel\ForgetPasswordRequest.cs" />
+    <Compile Include="ApiModel\APIRequestModel\GetPriceRequestModel.cs" />
+    <Compile Include="ApiModel\APIRequestModel\ImperialUpdateModelRequest.cs" />
+    <Compile Include="ApiModel\APIRequestModel\ListOfWorkoutRequestModel.cs" />
+    <Compile Include="ApiModel\APIRequestModel\LoginModelRequest.cs" />
+    <Compile Include="ApiModel\APIRequestModel\NotificationRequestModel.cs" />
+    <Compile Include="ApiModel\APIRequestModel\ResetPasswordRequest.cs" />
+    <Compile Include="ApiModel\APIRequestModel\SignUpModelRequset.cs" />
+    <Compile Include="ApiModel\APIRequestModel\UpdateActualExerciseRequestModel.cs" />
+    <Compile Include="ApiModel\APIRequestModel\UpdateActualWeightList.cs" />
+    <Compile Include="ApiModel\APIRequestModel\UpdateScheduleWorkoutRequestModel.cs" />
+    <Compile Include="ApiModel\APIRequestModel\UpdateWorkoutRequestModel.cs" />
+    <Compile Include="ApiModel\APIRequestModel\UpdatingActExistingRequest.cs" />
+    <Compile Include="ApiModel\APIRequestModel\UploadUserPicRequestModel.cs" />
+    <Compile Include="ApiModel\APIRequestModel\UserUpdateModelRequest.cs" />
+    <Compile Include="ApiModel\APIRequestModel\WorkoutDetailsRequestModel.cs" />
+    <Compile Include="ApiModel\APIResponseModel\AddActualResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\AddFriendIFitResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\AddWorkoutResponseModel.cs" />
+    <Compile Include="ApiModel\APIResponseModel\AllExerciseResponseModel.cs" />
+    <Compile Include="ApiModel\APIResponseModel\AppUserDetailsResponseModel.cs" />
+    <Compile Include="ApiModel\APIResponseModel\CompletedWorkoutResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\CountryListModelResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\DashboardWorkoutDataResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\DurationListResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\EditExerciseResponseModel.cs" />
+    <Compile Include="ApiModel\APIResponseModel\EditScheduleExerciseResponseModel.cs" />
+    <Compile Include="ApiModel\APIResponseModel\ExerciseTypeListResponseModel.cs" />
+    <Compile Include="ApiModel\APIResponseModel\FrequencyListResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\FResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\ImperialMetricsListModelResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\ImperialMetricsModelResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\ListOfInvitedFriendResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\ListOfInvitedUserSMSResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\LoginModelResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\MissedWorkoutResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\NotificationResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\PicUploadResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\PreviousExerciseModelResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\PriceListModelResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\RecurrenceListResponseModel.cs" />
+    <Compile Include="ApiModel\APIResponseModel\ScheduleDetailsResponseModel.cs" />
+    <Compile Include="ApiModel\APIResponseModel\ScheduleListResponseModel.cs" />
+    <Compile Include="ApiModel\APIResponseModel\SignUpResponseModel.cs" />
+    <Compile Include="ApiModel\APIResponseModel\SubscriptionListResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\UpdateUserPicResponseModel.cs" />
+    <Compile Include="ApiModel\APIResponseModel\UserDetailsModelResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\WorkoutDetailsModelResponse.cs" />
+    <Compile Include="ApiModel\APIResponseModel\WorkoutListModelResponse.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Country.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteSchedule_Result.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryTypeMaster.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMaster.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceExerciseSet.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DurationMaster.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Editexercise_Result.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EditPrice.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExcerciseSet.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Exercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExerciseTypeMaster.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Filters\CryptorEngine.cs" />
+    <Compile Include="FreeTextExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FrequencyMaster.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FriendFitDBContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FriendFitDBContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FriendFitDBContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FriendFitDBContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FriendFitDBContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="FriendsInvitation.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetCountryList_Result.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetTransactionForFriend_Result.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetTransactionForUser_Result.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ImperialMetric.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IRepository\EmailModel.cs" />
+    <Compile Include="IRepository\IDashboardRepository.cs" />
+    <Compile Include="IRepository\IExerciseRepository.cs" />
+    <Compile Include="IRepository\IFriendInvitationRepository.cs" />
+    <Compile Include="IRepository\IinvoiceRepository.cs" />
+    <Compile Include="IRepository\IScheduleExerciseRepository.cs" />
+    <Compile Include="IRepository\IScheduleRepository.cs" />
+    <Compile Include="IRepository\ISendWorkOutSMSRepository.cs" />
+    <Compile Include="IRepository\IUserSettingRepository.cs" />
+    <Compile Include="IRepository\IWorkoutRepository.cs" />
+    <Compile Include="LevelExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Link.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfFriends_Result.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfWorkSchedule_Result.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoginCustomer_Result.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Logo.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MailTimeLog.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseProductsList.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Recurrence.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\DashboardRepository.cs" />
+    <Compile Include="Repository\ExerciseRepository.cs" />
+    <Compile Include="Repository\FriendInvitationRepository.cs" />
+    <Compile Include="Repository\invoiceRepository.cs" />
+    <Compile Include="Repository\ScheduleExerciseRepository.cs" />
+    <Compile Include="Repository\ScheduleRepository.cs" />
+    <Compile Include="Repository\SendWorkOutSMSRepository.cs" />
+    <Compile Include="Repository\UserSettingsRepository.cs" />
+    <Compile Include="Repository\WorkoutRepository.cs" />
+    <Compile Include="RepsExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleActualDistanceExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleActualExcerciseSet.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleActualFreeTextExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleActualLevelExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleActualRepsExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleActualTimedExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleActualWeightExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleDetailsByUserId_Result.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleGoalDistanceExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleGoalExcerciseSet.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleGoalFreeTextExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleGoalLevelExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleGoalRepsExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleGoalTextExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleGoalTimedExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleGoalWeightExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleWeeklyMaster.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StatusMaster.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SubscriptionTypeMaster.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPrice.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TextExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TimedExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserEditProfile_Result.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserInvitation.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserProductPayment.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserPurchaseProductsList.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserRole.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserToken.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WeightExercise.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOut.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkoutDetailsById_Result.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkoutList_Result.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOutSchedule.cs">
+      <DependentUpon>FriendFitDBContext.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="FriendFitDBContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FriendFitDBContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="FriendFitDBContext.edmx.diagram">
+      <DependentUpon>FriendFitDBContext.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FriendFitDBContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FriendFitDBContext.edmx</DependentUpon>
+      <LastGenOutput>FriendFitDBContext.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="FriendFitDBContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FriendFitDBContext.edmx</DependentUpon>
+      <LastGenOutput>FriendFitDBContext.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NReco\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
